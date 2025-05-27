@@ -10,6 +10,17 @@ let userConfig = undefined
 //     // ignore error
 //   }
 // }
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+let assetPrefix = '';
+let basePath = '';
+
+// 替换 '<仓库名>' 为你实际的仓库名称
+const repoName = 'jrs_index'; // <--- 请务必替换这里
+
+if (isGithubActions) { // 或者直接设置，如果只用于 GitHub Pages
+  assetPrefix = `/${repoName}/`;
+  basePath = `/${repoName}`;
+}
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -23,7 +34,8 @@ const nextConfig = {
     unoptimized: true,
   },
   output: 'export',
-
+  assetPrefix: assetPrefix,
+  basePath: basePath,
   // experimental: {
   //   webpackBuildWorker: true,
   //   parallelServerBuildTraces: true,
