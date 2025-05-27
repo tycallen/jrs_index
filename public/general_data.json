@@ -1,0 +1,23 @@
+{
+  "last_updated": "2025-05-27 10:19:00",
+  "active_users_change": {
+    "daily": 300.0,
+    "weekly": -34.48,
+    "monthly": -37.93
+  },
+  "active_users": {
+    "daily": 4,
+    "weekly": 19,
+    "monthly": 54
+  },
+  "reply_change": {
+    "daily": 600.0,
+    "weekly": -40.48,
+    "monthly": -73.99
+  },
+  "replies": {
+    "daily": 7,
+    "weekly": 50,
+    "monthly": 310
+  }
+}

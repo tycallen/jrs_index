@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 245, 247, 250;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom, transparent, rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+.chart-container {
+  @apply rounded-xl shadow-lg bg-white p-4 h-full;
+}
+
+.chart-container:hover {
+  @apply shadow-xl transition-shadow duration-300;
+}
+
+.chart-title {
+  @apply text-lg font-semibold text-gray-800 mb-4;
+}
+
+@layer components {
+  .device-frame {
+    @apply rounded-[38px] overflow-hidden shadow-2xl border-8 border-gray-900 bg-gray-900;
+    max-width: 430px;
+    margin: 0 auto;
+  }
+
+  .device-screen {
+    @apply rounded-[30px] overflow-hidden bg-white;
+    aspect-ratio: 19.5 / 42;
+  }
+}
+
+.tab-active {
+  @apply bg-white text-blue-600 shadow-md;
+}
+
+.tab-inactive {
+  @apply bg-gray-100 text-gray-600 hover:bg-gray-200;
+}
