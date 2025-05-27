@@ -20,22 +20,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '23' # 或者你项目兼容的 Node.js 版本
-          cache: 'pnpm' # 如果使用 pnpm
+          node-version: '20' # 建议使用 LTS 版本，例如 18, 20
+          cache: 'npm' # 将缓存设置为 npm
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
-        with:
-          version: 8 # 或者您希望的 pnpm 版本，例如 9
-          
+      # 不需要 Setup pnpm 步骤了
+
       - name: Install dependencies 🔧
-        run: pnpm install # 或者 npm ci, yarn install --frozen-lockfile
+        run: npm ci # 使用 npm ci 通常比 npm install 更快且更适合 CI 环境，它会严格按照 package-lock.json 安装
 
       - name: Build 🏗️
-        # 确保 next.config.mjs 中 assetPrefix 和 basePath 配置正确
-        # 如果 assetPrefix 和 basePath 依赖于仓库名，你可能需要在这里动态设置
-        # 例如： run: REPO_NAME=${{ github.event.repository.name }} pnpm build
-        run: pnpm run build # 或者 npm run build
+        run: npm run build # 使用 npm 运行构建脚本
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
