@@ -30,7 +30,7 @@ jobs:
         # 确保 next.config.mjs 中 assetPrefix 和 basePath 配置正确
         # 如果 assetPrefix 和 basePath 依赖于仓库名，你可能需要在这里动态设置
         # 例如： run: REPO_NAME=${{ github.event.repository.name }} pnpm build
-        run: npm run build # 或者 npm run build
+        run: pnpm run build # 或者 npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
