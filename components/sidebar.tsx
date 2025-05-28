@@ -29,7 +29,7 @@ export default function Sidebar({ isMobile }: SidebarProps) {
       )}
     >
       <div className="p-4 border-b border-gray-200">
-        <h2 className="text-xl font-bold text-gray-800">数据可视化平台</h2>
+        <h2 className="text-xl font-bold text-gray-800">小站指数</h2>
         <p className="text-sm text-gray-500 mt-1">v1.0.0</p>
       </div>
 

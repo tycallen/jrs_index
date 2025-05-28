@@ -25,7 +25,7 @@ export default function Header() {
           </SheetContent>
         </Sheet>
 
-        <h1 className="text-xl font-bold text-gray-800 hidden md:block">数据可视化平台</h1>
+        <h1 className="text-xl font-bold text-gray-800 hidden md:block">小站指数</h1>
       </div>
 
       <div className="flex items-center gap-2">
