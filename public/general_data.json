@@ -1,23 +1,23 @@
 {
-  "last_updated": "2025-05-28 12:21:26",
+  "last_updated": "2025-05-29 09:45:24",
   "active_users_change": {
-    "daily": 200.0,
-    "weekly": -25.93,
-    "monthly": -41.38
+    "daily": 114.29,
+    "weekly": -22.58,
+    "monthly": -39.08
   },
   "active_users": {
-    "daily": 9,
-    "weekly": 20,
-    "monthly": 51
+    "daily": 15,
+    "weekly": 24,
+    "monthly": 53
   },
   "reply_change": {
-    "daily": 433.33,
-    "weekly": -33.75,
-    "monthly": -74.31
+    "daily": 107.14,
+    "weekly": -33.71,
+    "monthly": -74.1
   },
   "replies": {
-    "daily": 16,
-    "weekly": 53,
-    "monthly": 309
+    "daily": 29,
+    "weekly": 59,
+    "monthly": 316
   }
 }
